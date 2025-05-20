@@ -1,0 +1,1 @@
+This MATLAB code resamples any grayscale (not RGB) image (or stack of images) to increase or decrease the number of pixels in the image. This does so by creating a Lanczos kernel for each pixel, then multiplying each kernel by its own windowed/normalized weighted sinc(x) functions, therefore interpolating the image(s). If the image is a stack, each slice is handled independently.
